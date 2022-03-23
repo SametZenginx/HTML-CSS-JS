@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Selectors</title>
+        <style>
+            /* Select all h1
+            h1,p{
+                color:red;
+                background:blue;
+            }
+            */
+
+            #logo,.info{ /* Selects id 'logo' and selects class 'info' */
+                color:red;
+                background: blue;
+            }
+            #paragraph1.lead{ /* Selects <p id="paragraph1"class="lead info">*/
+                color:purple;
+                background-color: tan;
+            }
+            ul li a{
+                text-decoration: none;
+            }
+            .info span.primary{
+                color:turquoise;
+            }
+            *{ /* Select All*/
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header 1</h1>
+            <h1 id="logo">Logo</h1>
+
+            <ul>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+            </ul>
+        </header>
+        <h1>Header 2</h1>
+        <p id="paragraph1"class="lead info">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, maiores?
+        </p>
+        <p class="info">
+            Lorem ipsum <span class="primary">dolor</span> sit amet, consectetur adipisicing elit. 
+            Mollitia ut, quidem animi dicta quas eius provident facilis id dolorem autem.
+        </p>
+        <p class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Incidunt iusto doloribus placeat. 
+            Sapiente exercitationem aspernatur blanditiis mollitia earum minus sit?
+        </p>
+        <p>Test Paragraph</p>
+
+        <br>
+        <a href="#">hi</a>
+    
+    </body>
+</html>
